@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CHECK POINT</title> <!--Titulo de la pestaña-->
+    <style>
+        table, th, td {
+            border: 1px solid black
+        }
+    </style> <!--Esto permite aplicar un estilo a los elementos que se mencionan antes de los corchetes (table, th, td)-->
+</head>
+<body>
+    <header>
+        <h1> CHECK POINT📍 </h1>
+    </header> <!--Encabezado-->
+    <section>
+        <article> 
+
+        </article> <!--Para identificar elementos de manera independiente-->
+    </section> <!--Definir las ecciones de la pagina-->
+    <footer>
+        <p>Creado por Luis Fernando Martinez Gutierrez</p>
+        <p>Version 0.00.01</p.>
+    </footer> <!--Pie de pagina-->>
+    
+    
+    <!--INICIO DE SECION-->
+    
+    <form action="/formulario_usuaruis" method="post"> <!--
+    action es para registrar la base de datos donde se enviara la informacion registrada en el formulario
+
+    method es para identificar de que manera se desea enviar la inforamcion del formulario 
+
+        get enviar los valores atravez de la url 
+        post envia buscando la direccion registrada en action
+
+    ninguno de los dos es seguro para enviar datos secretos
+    -->
+        <label for="email"></label>
+        <input type="email" id="email" name="email" placeholder="Correo"/> 
+        <!--
+        type identifica que tipo de atributo tiene el imput (cuadro de texto, boton, etc
+        id es para identificar el imput y poder llamarlo en otras funciones
+        name sera la llave que tomara el servidor al leer el formulario
+        placeholder es para colocar dentro del recuadro de texto un texto indicativo
+        se puede usar value para dar un valor por defecto
+        --> 
+        <br> <!--Salto de texto-->
+        <br>
+        <label for="contraseña"></label>
+        <input type="password" id="contraseña" name="contraseña" placeholder="Contraseña"/>
+        <br>
+        <br>
+        <input type="submit"> <!--submit es para que envie todos los datos registrados en el formulario a el servidor-->
+    </form>
+
+    <hr>
+
+    <!--Inicio-->
+
+    <h2>¿Listo para un nuevo viaje?</h2>
+    <form>
+        <label for="nuevo_viaje"></label>
+        <button type="button" id="nuevo_viaje" name="nuevo_viaje">Nuevo Viaje</button>
+        <br>
+        <br>
+        <label for="mis_viajes"></label>
+        <button type="button" id="mis_viajes" name="mis_viajes" placeholder="Mis Viaje">Mis Viaje</button>
+        <br>
+        <br>
+        <label for="prox_viajes"></label>
+        <button type="button" id="prox_viajes" name="prox_viajes" placeholder="Proximos Viajes">Proximos Viajes</button>
+    </form>
+    <hr>
+    <!--Nuevo Viaje-->
+
+    <form action="/form_nuevois_viajes" method="post">
+        <label for="lugar">Lugar</label>
+        <br>
+        <input type="text" id="lugar" name="lugar" placeholder="Lugar"/>
+        <br>
+        <br>
+        <label for="fecha">Fecha del viae</label>
+        <br>
+        <input type="date" id="fecha" name="fecha"/>
+        <br>
+        <br>
+        <!--
+            <ul> lista no ordenanda
+                <li>Bicicleta</li>Item de la lista
+                <li>Moto</li>
+                <li>Carro</li>
+                <li>Bus</li>
+                <li>Avion</li>
+
+            <ol> lista ordenada
+                <li value="50"></li>
+                    <ol> se pueden agrear sublistas
+                        <li style="list-style-type: ;"></li> se puede cambiar el estilo de la numeracion
+                    </ol>
+            </ol>    
+        </ul>
+        -->
+        <br>
+        <br>
+        <label for="foto">Foto</label>
+        <br>
+        <input type="file" id="foto" name="fecha" placeholder="Foto"/>
+        <br>
+        <label for="comentario">Comentario</label>
+        <br>
+        <textarea rows="10" cols="50" id="comentario" name="comentario"></textarea>
+        <!--rows es numero de filas y cols es numero de columnas -->
+        <br>
+        <input type="submit"/>
+    </form>
+
+    <!--Tablas-->
+    <!--
+        <table>
+        <thead>
+            <tr>
+                <th>encabezado 1</th>
+                <th>encabezado 2</th>
+                <th>encabezado 3</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>contenido a1</td>
+                <td>contenido a2</td>
+                <td>contenido a3</td>
+            </tr>
+            <tr>
+                <td>contenido b1</td>
+                <td>contenido b2</td>
+                <td>contenido b3</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <td>pie 1</td>
+            <td>pie 2</td>
+            <td></td>
+        </tfoot>
+    </table>
+    -->
+</body>
+</html>
+
